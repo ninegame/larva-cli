@@ -1,19 +1,19 @@
 {
-    "name": "scrat",
-    "version": "0.2.8-1",
-    "description": "uc front-end integrated solution",
+    "name": "larva",
+    "version": "0.1.0",
+    "description": "uc 9game front-end integrated solution",
     "main": "index.js",
     "preferGlobal": true,
     "bin": {
-        "scrat": "bin/scrat"
+        "larva": "bin/larva"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [ "fis", "uc" ],
+    "keywords": [ "fis", "uc", "ninegame", "9game" ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/fouber/scrat.git"
+        "url": "https://github.com/atian25/larva.git"
     },
     "dependencies": {
         "fis": "1.7.14",
@@ -27,6 +27,6 @@
         "fis-optimizer-html-minifier": "0.0.9",
         "xmldom": "0.1.19"
     },
-    "author": "fouber",
+    "author": "TZ <atian25@qq.com>",
     "license": "MIT"
 }
