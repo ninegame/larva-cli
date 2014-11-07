@@ -8,6 +8,7 @@ module.exports = {
     exclude: /(node_modules\/.*)|(bower_modules\/.*)|(dist\/.*)/
   },
   modules: {
+    deploy: ['default', 'pack']
   },
   roadmap: {
     path: [{
@@ -22,6 +23,10 @@ module.exports = {
     },{
       reg: /([^\/]+\.inject\.js)$/i,
       release: '/server/inject/$1',
+      useHash: false
+    },{
+      reg: "package.json",
+      release: '/public/package.json',
       useHash: false
     }]
   },
@@ -59,6 +64,13 @@ module.exports = {
             "console.table",
             "console.exception"
           ]
+        }
+      }
+    },
+    deploy: {
+      pack: {
+        zip: {
+          file: './dist/html.zip'
         }
       }
     }
