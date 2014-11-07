@@ -1,6 +1,6 @@
 {
-    "name": "larva",
-    "version": "0.1.0",
+    "name": "larva-cli",
+    "version": "0.1.2",
     "description": "uc 9game front-end integrated solution",
     "main": "index.js",
     "preferGlobal": true,
@@ -13,7 +13,7 @@
     "keywords": [ "fis", "uc", "ninegame", "9game" ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/atian25/larva.git"
+        "url": "git@github.com:ninegame/larva-cli.git"
     },
     "dependencies": {
         "fis": "1.7.14",
