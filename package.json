@@ -1,32 +1,38 @@
 {
-    "name": "larva-cli",
-    "version": "0.1.2",
-    "description": "uc 9game front-end integrated solution",
-    "main": "index.js",
-    "preferGlobal": true,
-    "bin": {
-        "larva": "bin/larva"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [ "fis", "uc", "ninegame", "9game" ],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:ninegame/larva-cli.git"
-    },
-    "dependencies": {
-        "fis": "1.8.5",
-        "scrat-command-init" : "0.1.1-5",
-        "scrat-command-install" : "0.1.5-2",
-        "scrat-command-server"  : "0.0.11",
-        "scrat-parser-stylus"  : "0.0.4",
-        "fis-lint-jshint": "0.0.9",
-        "fis-parser-marked": "0.0.5",
-        "fis-parser-handlebars" : "0.0.1",
-        "fis-optimizer-html-minifier": "0.0.9",
-        "xmldom": "0.1.19"
-    },
-    "author": "TZ <atian25@qq.com>",
-    "license": "MIT"
+  "name": "larva-cli",
+  "version": "0.1.2",
+  "description": "uc 9game front-end integrated solution",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "larva": "bin/larva"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis",
+    "uc",
+    "ninegame",
+    "9game"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ninegame/larva-cli.git"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.4",
+    "fis": "1.8.5",
+    "fis-lint-jshint": "0.0.9",
+    "fis-optimizer-html-minifier": "0.0.9",
+    "fis-parser-handlebars": "0.0.1",
+    "fis-parser-marked": "0.0.5",
+    "scrat-command-init": "0.1.1-5",
+    "scrat-command-install": "0.1.5-2",
+    "scrat-command-server": "0.0.11",
+    "scrat-parser-stylus": "0.0.4",
+    "xmldom": "0.1.19"
+  },
+  "author": "TZ <atian25@qq.com>",
+  "license": "MIT"
 }
