@@ -10,7 +10,7 @@ var larvaConfig = require('./configs/larva.js');
 fis.config.merge(larvaConfig);
 
 //register command plugins
-['publish'].forEach(function(name){
+['publish', 'karma'].forEach(function(name){
   fis.require._cache['command-' + name] = require('./plugins/command/' + name);
 });
 

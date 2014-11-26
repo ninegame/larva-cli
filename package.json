@@ -27,6 +27,7 @@
     "fis-optimizer-html-minifier": "0.0.9",
     "fis-parser-handlebars": "0.0.1",
     "fis-parser-marked": "0.0.5",
+    "rimraf": "^2.2.8",
     "scrat-command-init": "0.1.1-5",
     "scrat-command-install": "0.1.5-2",
     "scrat-command-server": "0.0.11",

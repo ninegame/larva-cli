@@ -71,7 +71,7 @@ function makeComponentModulesAlias(componentFile, map, ret) {
                 } else if(file = ret.src[dirname + module_name + '.css']){
                     map.alias[alias] = file.getId();
                 } else {
-                    fis.log.error('can`t find module [' + name + '@' + version + '] in [/component.json]');
+                    fis.log.warning('can`t find module [' + name + '@' + version + '] in [/component.json]');
                 }
                 makeComponentModulesAlias(componentFile, map, ret);
             } else {

@@ -44,7 +44,7 @@ module.exports = {
         release: false
       },
       {
-        reg: /.*\.spec\.js$/,
+        reg: /(.*)\.spec\.js$/,
         release: false
       },
       {
@@ -87,26 +87,30 @@ module.exports = {
       //  release : '/views/${name}/${version}/$1'
       //},
       {
-        reg : /^\/component_modules\/(.*)\.(styl|css)$/i,
-        id : '${name}/${version}/lib/$1.css',
+        reg: /^\/component_modules\/.*angular-mocks.*/i,
+        release: false
+      },
+      {
+        reg : /^\/component_modules\/([^\/]+)\/[\d\.]+\/(.*)\.(styl|css)$/i,
+        id : '${name}/${version}/lib/$1/$2.css',
         isMod : true,
         useSprite : true,
         useHash : false,
-        url : '${urlPrefix}/${name}/${version}/lib/$1.$2',
-        release : '/public/${name}/${version}/lib/$1.$2'
+        url : '${urlPrefix}/${name}/${version}/lib/$1/$2.$3',
+        release : '/public/${name}/${version}/lib/$1/$2.$3'
       },
       {
-        reg : /^\/component_modules\/(.*\.js)$/i,
-        id : '${name}/${version}/lib/$1',
+        reg : /^\/component_modules\/([^\/]+)\/[\d\.]+\/(.*\.js)$/i,
+        id : '${name}/${version}/lib/$1/$2',
         isMod : true,
         useHash : false,
-        url : '${urlPrefix}/${name}/${version}/lib/$1',
-        release : '/public/${name}/${version}/lib/$1'
+        url : '${urlPrefix}/${name}/${version}/lib/$1/$2',
+        release : '/public/${name}/${version}/lib/$1/$2'
       },
       {
-        reg : /^\/component_modules\/(.*)$/i,
-        url : '${urlPrefix}/${name}/${version}/lib/$1',
-        release : '/public/${name}/${version}/lib/$1'
+        reg : /^\/component_modules\/([^\/]+)\/[\d\.]+\/(.*)$/i,
+        url : '${urlPrefix}/${name}/${version}/lib/$1/$2',
+        release : '/public/${name}/${version}/lib/$1/$2'
       },
       {
         reg : /^\/components\/(.*)\.(styl|css)$/i,
