@@ -27,7 +27,7 @@ function fisFramework(files, config, emitter, loggerFactory){
   //monitor file change
   emitter.on('file_list_modified', function(promise) {
     //compile
-    var cmd = config.fis.cmd || 'larva karma -r ./src -d ./dist';
+    var cmd = config.fis.cmd || (process.cwd()+ '/node_modules/.bin/larva karma -r ./src -d ./dist');
     logger.info(cmd);
     shelljs.exec(cmd);
 
