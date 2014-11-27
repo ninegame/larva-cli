@@ -32,6 +32,7 @@
     "scrat-command-install": "0.1.5-2",
     "scrat-command-server": "0.0.11",
     "scrat-parser-stylus": "0.0.4",
+    "shelljs": "^0.3.0",
     "xmldom": "0.1.19"
   },
   "author": "TZ <atian25@qq.com>",

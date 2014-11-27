@@ -7,6 +7,10 @@ exports.register = function (commander) {
   commander
     .option('-d, --dest <names>', 'release output destination', String, './dist')
     .option('-r, --root <path>', 'set project root')
+    .option('-p, --pack', 'with package', Boolean, true)
+    .option('-w, --watch', 'monitor the changes of project')
+    .option('-c, --clean', 'clean compile cache', Boolean, false)
+    .option('-m, --md5 [level]', 'md5 release option', Number)
     .option('-f, --file <filename>', 'set fis-conf file')
     .option('-c, --clean', 'clean install cache', Boolean)
     .action(function(){

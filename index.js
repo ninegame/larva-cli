@@ -1,4 +1,4 @@
-var fis = module.exports = require('fis');
+var fis = exports.fis = require('fis');
 fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 fis.cli.name = 'larva';
 
@@ -13,6 +13,8 @@ fis.config.merge(larvaConfig);
 ['publish', 'karma'].forEach(function(name){
   fis.require._cache['command-' + name] = require('./plugins/command/' + name);
 });
+
+require('./plugins/command/karma-fis')(exports);
 
 //register deploy plugins
 ['pack', 'apk'].forEach(function(name){
