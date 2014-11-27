@@ -6,6 +6,8 @@ exports.desc = 'create release for karma';
 exports.register = function (commander) {
   commander
     .option('-d, --dest <names>', 'release output destination', String, './dist')
+    .option('-r, --root <path>', 'set project root')
+    .option('-f, --file <filename>', 'set fis-conf file')
     .option('-c, --clean', 'clean install cache', Boolean)
     .action(function(){
       var argv = process.argv;

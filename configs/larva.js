@@ -9,7 +9,8 @@ module.exports = {
   project : {
     fileType : {
       text : 'handlebars, jade, ejs, jsx, styl'
-    }
+    },
+    exclude: /(node_modules\/.*)|(bower_modules\/.*)|(dist\/.*)/
   },
   modules : {
     parser : {
@@ -30,9 +31,6 @@ module.exports = {
     //cache: true,
     urlPattern: '/%s',
     comboPattern: '/co??%s'
-  },
-  project: {
-    exclude: /(node_modules\/.*)|(bower_modules\/.*)|(dist\/.*)/
   },
   modules: {
     deploy: ['default', 'pack']
