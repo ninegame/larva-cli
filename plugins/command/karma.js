@@ -12,7 +12,6 @@ exports.register = function (commander) {
     .option('-c, --clean', 'clean compile cache', Boolean, false)
     .option('-m, --md5 [level]', 'md5 release option', Number)
     .option('-f, --file <filename>', 'set fis-conf file')
-    .option('-c, --clean', 'clean install cache', Boolean)
     .action(function(){
       var argv = process.argv;
       var dest = commander.dest;
@@ -20,7 +19,7 @@ exports.register = function (commander) {
       if(commander.clean){
         rimraf.sync(dest);
       }
-      argv.splice(2, 1, 'release', '-d', dest);
+      argv.splice(2, 1, 'release');
       fis.cli.run(argv);
     });
 };
